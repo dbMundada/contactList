@@ -8,6 +8,10 @@ var bodyParser = require('body-parser');
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 
+// const Password = 1;
+// const salary = 234;
+// const CreditCardId = 23432;
+
 app.get('/contactlist', function (req, res) {
 	console.log("I received a GET request");
 	db.contactlist.find(function (err, docs){

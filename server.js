@@ -9,7 +9,6 @@ app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 
 // const Password = 1;
-// const salary = 234;
 // const CreditCardId = 23432;
 
 app.get('/contactlist', function (req, res) {
